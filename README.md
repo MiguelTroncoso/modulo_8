@@ -19,6 +19,7 @@ Sitio estático publicado con **GitHub Pages**. Reúne el perfil profesional, lo
 del curso, el caso de estudio técnico, la investigación de empresa y la matriz FODA.
 
 📄 **Documento de entrega (PDF):** [`docs/Portafolio_Modulo_8_Miguel_Troncoso.pdf`](docs/Portafolio_Modulo_8_Miguel_Troncoso.pdf)
+🧾 **Currículum Vitae (PDF):** [`docs/CV_Miguel_Troncoso.pdf`](docs/CV_Miguel_Troncoso.pdf)
 
 ---
 
@@ -46,6 +47,7 @@ contiene la investigación de empresa, el caso de estudio y el análisis FODA.
 | **Caso de estudio** | Sección *Caso de estudio*: descripción, desafío, solución, herramienta, aprendizajes, métricas, habilidades y justificación. | ✅ |
 | **3. PLUS: Matriz FODA** | 5 fortalezas, 5 oportunidades de mejora, 5 amenazas y 5 oportunidades de mercado. | ✅ |
 | **Entregable en PDF** | `docs/Portafolio_Modulo_8_Miguel_Troncoso.pdf` con portada, investigación y enlace al portafolio. | ✅ |
+| **CV adaptado al puesto** | `docs/CV_Miguel_Troncoso.pdf`, enlazado desde el sitio y alineado al perfil junior tech. | ✅ |
 | **Calidad técnica y comunicacional** | Diseño responsive, accesibilidad, navegación, documentación y evidencias visuales. | ✅ |
 
 ---
@@ -102,9 +104,11 @@ modulo_8/
 ├── docs/
 │   ├── Portafolio_Modulo_8_Miguel_Troncoso.pdf   # Documento de entrega (8 páginas)
 │   ├── Entrega_Modulo_8_Miguel_Troncoso.md       # Versión Markdown del documento
+│   ├── CV_Miguel_Troncoso.pdf       # Currículum Vitae de una página
 │   └── screenshots/                 # Capturas del sitio (desktop y móvil)
 ├── tools/
 │   ├── build_portfolio_pdf.py       # Genera el PDF de entrega con reportlab
+│   ├── build_cv_pdf.py              # Genera el CV en PDF con reportlab
 │   └── capture_portfolio.py         # Genera las capturas del sitio con Playwright
 └── README.md
 ```
@@ -130,6 +134,9 @@ python3 -m http.server 8000
 ```bash
 # PDF de entrega (requiere reportlab)
 python3 tools/build_portfolio_pdf.py
+
+# CV en PDF (requiere reportlab)
+python3 tools/build_cv_pdf.py
 
 # Capturas del sitio (requiere playwright + Chrome)
 python3 tools/capture_portfolio.py
