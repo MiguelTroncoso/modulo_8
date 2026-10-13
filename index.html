@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Miguel Troncoso | Desarrollador Web Python &amp; Django</title>
+  <meta name="description" content="Portafolio digital de Miguel Troncoso, desarrollador web junior especializado en Python y Django. Proyectos, caso de estudio y matriz FODA.">
+  <meta name="author" content="Miguel Troncoso">
+  <meta name="theme-color" content="#0b1120">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miguel Troncoso | Desarrollador Web Python &amp; Django">
+  <meta property="og:description" content="Portafolio digital: Alke Wallet, TaskMaster y ClickAndGo. Caso de estudio de integridad de datos con el ORM de Django.">
+  <meta property="og:url" content="https://migueltroncoso.github.io/modulo_8/">
+  <meta property="og:image" content="https://migueltroncoso.github.io/modulo_8/assets/img/alke-dashboard.png">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Inicio - Miguel Troncoso">
+        <span class="brand__mark" aria-hidden="true">MT</span>
+        <span class="brand__text">Miguel&nbsp;Troncoso<small>Python &amp; Django</small></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#caso-de-estudio">Caso de estudio</a></li>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#foda">FODA</a></li>
+          <li><a class="nav-cta" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Portafolio digital · Módulo 8</p>
+          <h1 class="hero__title">
+            Hola, soy <span class="grad">Miguel Troncoso</span>
+          </h1>
+          <p class="hero__role">Desarrollador Web Junior &mdash; <strong>Python · Django · SQL</strong></p>
+          <p class="hero__pitch">
+            Construyo aplicaciones web con <strong>Django</strong>: modelado de datos, ORM,
+            operaciones CRUD, consultas personalizadas y pruebas automatizadas. Vengo de una
+            formación intensiva en desarrollo de software y busco mi primera oportunidad
+            profesional en el sector IT.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#proyectos">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+              Ver proyectos
+            </a>
+            <a class="btn btn--ghost" href="docs/Portafolio_Modulo_8_Miguel_Troncoso.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+              Descargar portafolio PDF
+            </a>
+          </div>
+
+          <ul class="hero__links" aria-label="Enlaces de contacto">
+            <li>
+              <a href="https://github.com/MiguelTroncoso" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/miguel-troncoso/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4V9Z"/></svg>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="mailto:miguel.troncoso36@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 7.2 8-4.7V7l-8 4.7L4 7v.5l8 4.7Z"/></svg>
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero__card reveal" aria-label="Resumen profesional">
+          <div class="profile-card">
+            <img class="profile-card__avatar" src="assets/img/avatar.svg" alt="Avatar profesional de Miguel Troncoso" width="128" height="128">
+            <h2>Miguel Troncoso</h2>
+            <p class="profile-card__role">Trainee / Junior · Talento Tech</p>
+            <p class="profile-card__meta">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+              Santiago, Chile · Remoto
+            </p>
+            <ul class="profile-card__stats">
+              <li><strong>3</strong><span>Proyectos</span></li>
+              <li><strong>54</strong><span>Tests OK</span></li>
+              <li><strong>6</strong><span>Tecnologías</span></li>
+            </ul>
+            <div class="profile-card__badges" aria-label="Tecnologías principales">
+              <span>Python</span><span>Django</span><span>SQL</span><span>Git</span><span>Bootstrap</span><span>Testing</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE MÍ ================= -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Perfil profesional y propuesta de valor</h2>
+          <p class="section__lead">
+            Perfil junior con foco en backend: me interesa resolver problemas reales de datos,
+            cuidar la integridad de la información y documentar cada decisión técnica.
+          </p>
+        </header>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Vengo de una formación intensiva en desarrollo de software (bootcamp) donde trabajé
+              desde los fundamentos de <strong>Python</strong> y las <strong>bases de datos
+              relacionales</strong> hasta el desarrollo de aplicaciones web completas con
+              <strong>Django</strong>.
+            </p>
+            <p>
+              En el camino construí una billetera digital, una plataforma de gestión de proyectos y
+              un e-commerce de consola con persistencia en SQLite, integración con una API externa
+              y un guion de pruebas automatizadas. En cada entrega prioricé tres cosas: que el
+              producto funcione, que los datos se mantengan íntegros y que cualquiera pueda
+              entenderlo leyendo el repositorio.
+            </p>
+            <p>
+              Hoy busco un rol <strong>trainee o junior</strong> donde pueda aportar en el backend
+              con Python/Django y, al mismo tiempo, seguir creciendo en APIs, testing, Docker y
+              servicios en la nube.
+            </p>
+
+            <ul class="highlight-list">
+              <li><strong>Backend con Django:</strong> modelos, ORM, migraciones, vistas basadas en clases y panel de administración.</li>
+              <li><strong>Integridad de datos:</strong> validaciones de negocio, transacciones atómicas y control de saldos.</li>
+              <li><strong>Calidad:</strong> 54 pruebas automatizadas aprobadas y documentación técnica en cada repositorio.</li>
+            </ul>
+          </div>
+
+          <ol class="timeline reveal" aria-label="Trayectoria formativa">
+            <li class="timeline__item">
+              <span class="timeline__tag">Módulo 5</span>
+              <h3>Fundamentos y E-commerce</h3>
+              <p>Sistema de consola <strong>ClickAndGo</strong>: POO, SQLite, DAO, API del dólar y guion de pruebas P01–P19.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__tag">Módulo 6</span>
+              <h3>Desarrollo Web con Django</h3>
+              <p>Plataforma <strong>TaskMaster</strong>: autenticación, CRUD, dashboard y 18 pruebas automatizadas.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__tag">Módulo 7</span>
+              <h3>Acceso a datos y ORM</h3>
+              <p>Billetera digital <strong>Alke Wallet</strong>: relaciones 1:1, 1:N y M:N, migraciones, consultas y 36 pruebas.</p>
+            </li>
+            <li class="timeline__item timeline__item--current">
+              <span class="timeline__tag">Módulo 8</span>
+              <h3>Portafolio digital</h3>
+              <p>Este sitio: marca personal, caso de estudio técnico y análisis FODA orientado al mercado IT.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section class="section section--alt" id="habilidades">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Habilidades técnicas</p>
+          <h2>Stack y herramientas</h2>
+          <p class="section__lead">Tecnologías que utilicé en proyectos reales del curso.</p>
+        </header>
+
+        <div class="skills">
+          <article class="skill-card reveal">
+            <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3h8l-1 6H9L8 3Zm-1.5 8h11l1 5a4 4 0 0 1-4 4h-5a4 4 0 0 1-4-4l1-5Z"/></svg>Lenguajes</h3>
+            <ul>
+              <li>Python 3 (POO, funciones, módulos)</li>
+              <li>SQL (DDL, DML, joins, agregaciones)</li>
+              <li>HTML5, CSS3 y JavaScript básico</li>
+              <li>Bash / terminal</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v4H3V6Zm0 8h18v4H3v-4Zm3-6v0m0 8v0"/></svg>Frameworks</h3>
+            <ul>
+              <li>Django 6 (MVT, ORM, CBV, admin, auth)</li>
+              <li>Flask (sitio de documentación y consola web)</li>
+              <li>Bootstrap 5 y plantillas DTL</li>
+              <li>Django REST (en aprendizaje)</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4.97 0 9 1.79 9 4s-4.03 4-9 4-9-1.79-9-4 4.03-4 9-4Zm9 8v3c0 2.21-4.03 4-9 4s-9-1.79-9-4v-3"/></svg>Bases de datos</h3>
+            <ul>
+              <li>SQLite (desarrollo)</li>
+              <li>PostgreSQL (configuración de producción)</li>
+              <li>Modelado relacional y migraciones</li>
+              <li>Consultas ORM, <code>raw()</code> y cursores</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10v4H7V4Zm-3 7h16v3H4v-3Zm2 6h12v3H6v-3Z"/></svg>Herramientas y prácticas</h3>
+            <ul>
+              <li>Git y GitHub (ramas, commits, PR)</li>
+              <li>Testing automatizado (<code>unittest</code>, Django TestCase)</li>
+              <li>Playwright para evidencias visuales</li>
+              <li>Documentación técnica y README</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROYECTOS ================= -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Portafolio de proyectos</p>
+          <h2>Tres productos digitales desarrollados en el curso</h2>
+          <p class="section__lead">
+            Cada proyecto resuelve una problemática concreta y fue documentado, versionado y probado.
+          </p>
+        </header>
+
+        <div class="projects">
+          <!-- Proyecto 1 -->
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="assets/img/alke-dashboard.png" alt="Panel de control de Alke Wallet con indicadores de saldo y ranking de clientes" loading="lazy">
+              <span class="project__flag project__flag--featured">Caso de estudio</span>
+            </div>
+            <div class="project__body">
+              <div class="project__heading">
+                <h3>Alke Wallet</h3>
+                <span class="project__year">Módulo 7</span>
+              </div>
+              <p class="project__tagline">Billetera digital con Django</p>
+              <p>
+                Aplicación web para administrar clientes, cuentas y transacciones financieras,
+                con saldos consistentes, panel administrativo y consultas avanzadas al ORM.
+              </p>
+              <ul class="project__features">
+                <li>Relaciones 1:1, 1:N y M:N con validaciones de negocio.</li>
+                <li>Actualización atómica de saldos y reversa de movimientos.</li>
+                <li>36 pruebas automatizadas y 6 consultas personalizadas.</li>
+              </ul>
+              <div class="project__stack">
+                <span>Python</span><span>Django</span><span>SQLite/PostgreSQL</span><span>Bootstrap</span><span>Testing</span>
+              </div>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/MiguelTroncoso/modulo_7" target="_blank" rel="noopener">Ver repositorio</a>
+                <a class="link-arrow" href="#caso-de-estudio">Leer caso de estudio</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="assets/img/taskmaster-dashboard.png" alt="Dashboard de TaskMaster con métricas de proyectos y tareas" loading="lazy">
+            </div>
+            <div class="project__body">
+              <div class="project__heading">
+                <h3>TaskMaster</h3>
+                <span class="project__year">Módulo 6</span>
+              </div>
+              <p class="project__tagline">Plataforma de gestión de proyectos y tareas</p>
+              <p>
+                Sistema web con registro de usuarios, control de acceso por propietario y un
+                dashboard con indicadores de avance de proyectos y tareas.
+              </p>
+              <ul class="project__features">
+                <li>Autenticación, registro y aislamiento de datos por usuario.</li>
+                <li>Vistas basadas en clases con <code>LoginRequiredMixin</code> y <code>UserPassesTestMixin</code>.</li>
+                <li>18 pruebas unitarias que validan seguridad y reglas de negocio.</li>
+              </ul>
+              <div class="project__stack">
+                <span>Python</span><span>Django</span><span>Bootstrap</span><span>Auth</span><span>Testing</span>
+              </div>
+              <div class="project__links">
+                <a class="link-arrow" href="https://github.com/MiguelTroncoso/Modulo_6" target="_blank" rel="noopener">Ver repositorio</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="project reveal">
+            <div class="project__media">
+              <img src="assets/img/clickandgo-diagrama.png" alt="Diagrama de clases del sistema de e-commerce ClickAndGo" loading="lazy">
+            </div>
+            <div class="project__body">
+              <div class="project__heading">
+                <h3>ClickAndGo</h3>
+                <span class="project__year">Módulo 5</span>
+              </div>
+              <p class="project__tagline">E-commerce de consola con persistencia SQLite</p>
+              <p>
+                Sistema de ventas por consola que gestiona clientes, productos, pedidos y
+                trabajadores, con separación por capas (DAO/servicios) e indicador del dólar.
+              </p>
+              <ul class="project__features">
+                <li>Arquitectura por capas: modelo, DAO y servicios.</li>
+                <li>Integración con la API de <code>mindicador.cl</code> para el valor del dólar.</li>
+                <li>Guion de pruebas automatizadas P01–P19 y despliegue en VPS con Nginx.</li>
+              </ul>
+              <div class="project__stack">
+                <span>Python</span><span>SQLite</span><span>POO</span><span>API REST</span><span>Flask</span>
+              </div>
+              <div class="project__links">
+                <a class="link-arrow" href="https://inacap.superflash.site" target="_blank" rel="noopener">Ver demo en vivo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CASO DE ESTUDIO ================= -->
+    <section class="section section--alt" id="caso-de-estudio">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Caso de estudio</p>
+          <h2>Integridad financiera con el ORM de Django</h2>
+          <p class="section__lead">
+            Alke Wallet · el proyecto más desafiante de mi recorrido formativo.
+          </p>
+        </header>
+
+        <div class="case">
+          <div class="case__main reveal">
+            <div class="case__block">
+              <h3><span class="case__num">01</span> Descripción de la actividad</h3>
+              <p>
+                Desarrollar una billetera digital en Django que permita administrar
+                <strong>clientes, cuentas y transacciones</strong> (depósitos, retiros y
+                transferencias), con un modelo de datos relacional, CRUD completo, panel
+                administrativo y consultas personalizadas al ORM.
+              </p>
+            </div>
+
+            <div class="case__block">
+              <h3><span class="case__num">02</span> Desafío principal</h3>
+              <p>
+                Garantizar que el <strong>saldo nunca quede inconsistente</strong>: validar
+                retiros sin fondos, impedir transferencias a la misma cuenta y asegurar que dos
+                operaciones simultáneas no corrompan el saldo, todo dentro de un modelo con
+                relaciones 1:1, 1:N y M:N.
+              </p>
+            </div>
+
+            <div class="case__block">
+              <h3><span class="case__num">03</span> Solución propuesta</h3>
+              <ul class="case__list">
+                <li>Lógica de saldo dentro de una <strong>transacción atómica</strong> con bloqueo pesimista (<code>select_for_update</code>).</li>
+                <li>Validaciones de negocio en el modelo (<code>clean()</code>) y refuerzo en <code>save()</code> para el uso directo del ORM.</li>
+                <li>Recálculo de saldos y reversa automática al eliminar un movimiento.</li>
+                <li>CRUD con vistas basadas en clases protegidas por <code>LoginRequiredMixin</code> y formularios con CSRF.</li>
+                <li>Una suite de pruebas que cubre modelos, relaciones, reglas de negocio y vistas.</li>
+              </ul>
+            </div>
+
+            <div class="case__block">
+              <h3><span class="case__num">04</span> Herramientas técnicas utilizadas</h3>
+              <div class="project__stack project__stack--wide">
+                <span>Python 3.14</span><span>Django 6.1</span><span>ORM</span><span>SQLite / PostgreSQL</span>
+                <span>Bootstrap 5</span><span>Git &amp; GitHub</span><span>Django TestCase</span><span>Playwright</span>
+              </div>
+            </div>
+
+            <div class="case__block">
+              <h3><span class="case__num">05</span> Principales aprendizajes</h3>
+              <ul class="case__list">
+                <li>Modelar relaciones complejas y traducirlas a migraciones versionadas.</li>
+                <li>Usar transacciones y bloqueos para proteger la integridad de los datos.</li>
+                <li>Escribir pruebas que documentan el comportamiento esperado del sistema.</li>
+                <li>Separar validación de formularios, lógica de modelo y presentación.</li>
+              </ul>
+            </div>
+
+            <div class="case__block">
+              <h3><span class="case__num">06</span> Habilidades técnicas aplicadas</h3>
+              <div class="tags">
+                <span>Python</span><span>Django ORM</span><span>SQL y PostgreSQL</span><span>Modelado de datos</span>
+                <span>Transacciones</span><span>Testing</span><span>Seguridad CSRF</span><span>Git</span><span>Documentación</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="case__aside reveal">
+            <div class="metrics">
+              <h3>Métricas de impacto</h3>
+              <ul>
+                <li><strong>36 / 36</strong><span>Pruebas automatizadas aprobadas</span></li>
+                <li><strong>3</strong><span>Tipos de relación implementados (1:1, 1:N, M:N)</span></li>
+                <li><strong>6</strong><span>Consultas personalizadas (ORM, <code>raw()</code> y cursores)</span></li>
+                <li><strong>100 %</strong><span>Cobertura del CRUD con vistas basadas en clases</span></li>
+                <li><strong>0</strong><span>Regresiones de saldo detectadas en la suite</span></li>
+              </ul>
+            </div>
+
+            <div class="why">
+              <h3>¿Por qué lo elegí?</h3>
+              <p>
+                Porque fue el proyecto donde más crecí técnicamente: pasé de escribir consultas
+                simples a razonar sobre integridad, concurrencia y calidad de datos. Es el mejor
+                ejemplo del tipo de problema backend que quiero resolver profesionalmente.
+              </p>
+            </div>
+
+            <div class="evidence">
+              <h3>Evidencia</h3>
+              <a class="evidence__img" href="https://github.com/MiguelTroncoso/modulo_7" target="_blank" rel="noopener">
+                <img src="assets/img/alke-consultas.png" alt="Vista de consultas personalizadas de Alke Wallet con SQL y ORM" loading="lazy">
+              </a>
+              <a class="link-arrow" href="https://github.com/MiguelTroncoso/modulo_7" target="_blank" rel="noopener">Ver código y documentación</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EMPRESA ================= -->
+    <section class="section" id="empresa">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Investigación de empresa</p>
+          <h2>Fintual &mdash; fintech chilena con ADN técnico</h2>
+          <p class="section__lead">
+            Empresa real del sector tecnológico donde me gustaría trabajar, analizada desde una
+            perspectiva técnica.
+          </p>
+        </header>
+
+        <div class="company__grid">
+          <div class="company__table reveal">
+            <table>
+              <caption class="sr-only">Aspectos técnicos que me atraen de Fintual</caption>
+              <thead>
+                <tr><th scope="col">Dimensión</th><th scope="col">Qué me atrae y por qué</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Valores y propósito</th>
+                  <td>Democratizar la inversión con productos <strong>simples, transparentes y de bajo costo</strong>, promoviendo el ahorro de largo plazo por sobre la especulación.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tipo de productos</th>
+                  <td>Fondos mutuos, ahorro automático, APV y herramientas de planificación; todo empaquetado en una experiencia digital y fácil de usar.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Tecnologías</th>
+                  <td><strong>Python</strong> como lenguaje central, bases de datos relacionales, servicios en la nube (AWS) y fuerte trabajo de datos e integraciones financieras.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Metodologías de trabajo</th>
+                  <td>Equipos pequeños y autónomos, iteraciones cortas, revisión de código y automatización: el mismo enfoque que apliqué en mis proyectos.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Enfoque en innovación</th>
+                  <td>Pioneros en fondos indexados de bajo costo en Chile y en automatizar decisiones financieras complejas con datos.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <aside class="company__side">
+            <div class="panel reveal">
+              <h3>3 formas en que aportaría valor</h3>
+              <ol class="numbered">
+                <li>
+                  <strong>Desarrollo backend en Python/Django:</strong> construir y mantener
+                  funcionalidades con modelos de datos claros, migraciones ordenadas y validaciones
+                  robustas, igual que en Alke Wallet.
+                </li>
+                <li>
+                  <strong>Calidad e integridad de datos:</strong> aportar testing automatizado y
+                  revisión de casos borde, crítico en productos financieros regulados.
+                </li>
+                <li>
+                  <strong>Documentación y comunicación técnica:</strong> transformar decisiones y
+                  procesos en documentación clara, algo que el propio puesto valora.
+                </li>
+              </ol>
+            </div>
+
+            <div class="panel panel--accent reveal">
+              <h3>3 preguntas para el reclutador</h3>
+              <ol class="numbered">
+                <li>¿Cómo se organizan los equipos de producto y cuánto ownership tiene un perfil junior sobre el ciclo completo, desde la implementación hasta el despliegue?</li>
+                <li>¿Qué estrategia de testing y control de calidad utilizan en un producto financiero regulado?</li>
+                <li>¿Cómo es el proceso de onboarding y mentoría para perfiles junior, y qué se espera de mí en los primeros tres meses?</li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FODA ================= -->
+    <section class="section section--alt" id="foda">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">PLUS · Análisis personal</p>
+          <h2>Matriz FODA</h2>
+          <p class="section__lead">
+            Lectura honesta de mi punto de partida para insertarme en el mercado IT.
+          </p>
+        </header>
+
+        <div class="foda">
+          <article class="foda__card foda__card--f reveal">
+            <header><span class="foda__letter">F</span><h3>Fortalezas</h3></header>
+            <ul>
+              <li>Modelado de datos y lógica de negocio con ORM.</li>
+              <li>Desarrollo de CRUD, autenticación y admin en Django.</li>
+              <li>Testing automatizado (54 pruebas aprobadas).</li>
+              <li>Versionado con Git y documentación técnica clara.</li>
+              <li>Aprendizaje autónomo y resolución de problemas.</li>
+            </ul>
+          </article>
+
+          <article class="foda__card foda__card--o reveal">
+            <header><span class="foda__letter">O</span><h3>Oportunidades de mejora</h3></header>
+            <ul>
+              <li>Construir APIs REST con Django REST Framework.</li>
+              <li>Profundizar en JavaScript y un framework de frontend.</li>
+              <li>Incorporar Docker y pipelines de CI/CD.</li>
+              <li>Subir mi inglés técnico a nivel intermedio.</li>
+              <li>Desplegar en la nube (AWS) con buenas prácticas.</li>
+            </ul>
+          </article>
+
+          <article class="foda__card foda__card--a reveal">
+            <header><span class="foda__letter">A</span><h3>Amenazas del mercado</h3></header>
+            <ul>
+              <li>Alta competencia entre perfiles junior en tecnología.</li>
+              <li>Ofertas que piden experiencia previa que aún no tengo.</li>
+              <li>Evolución acelerada de las herramientas y frameworks.</li>
+              <li>Automatización con IA que redefine tareas básicas.</li>
+              <li>Contexto económico que enfría las contrataciones.</li>
+            </ul>
+          </article>
+
+          <article class="foda__card foda__card--op reveal">
+            <header><span class="foda__letter">O</span><h3>Oportunidades del mercado</h3></header>
+            <ul>
+              <li>Alta demanda de perfiles Python, Django y datos.</li>
+              <li>Digitalización de pymes y servicios públicos.</li>
+              <li>Fintech y retail que necesitan integraciones y datos.</li>
+              <li>Modalidad remota que amplía el mercado a LatAm.</li>
+              <li>Programas de talento junior en empresas tecnológicas.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="contact reveal">
+          <div class="contact__text">
+            <p class="eyebrow">Contacto</p>
+            <h2>¿Conversamos?</h2>
+            <p>
+              Estoy disponible para oportunidades <strong>trainee o junior</strong> en desarrollo
+              web, backend Python/Django o análisis de datos. También acepto feedback sobre este
+              portafolio.
+            </p>
+            <ul class="contact__list">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 7.2 8-4.7V7l-8 4.7L4 7v.5l8 4.7Z"/></svg>
+                <a href="mailto:miguel.troncoso36@gmail.com">miguel.troncoso36@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.5 9.5 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                <a href="https://github.com/MiguelTroncoso" target="_blank" rel="noopener">github.com/MiguelTroncoso</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.75V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.2 1.45-2.2 2.96V21h-4V9Z"/></svg>
+                <a href="https://www.linkedin.com/in/miguel-troncoso/" target="_blank" rel="noopener">linkedin.com/in/miguel-troncoso</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+                Santiago, Chile &middot; Disponible para trabajo remoto
+              </li>
+            </ul>
+          </div>
+          <div class="contact__cta">
+            <a class="btn btn--primary btn--lg" href="mailto:miguel.troncoso36@gmail.com?subject=Oportunidad%20laboral%20-%20Desarrollador%20Junior">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm8 7.2 8-4.7V7l-8 4.7L4 7v.5l8 4.7Z"/></svg>
+              Escríbeme
+            </a>
+            <a class="btn btn--ghost btn--lg" href="docs/Portafolio_Modulo_8_Miguel_Troncoso.pdf" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+              Descargar portafolio PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>
+        <strong>Miguel Troncoso</strong> &middot; Portafolio digital, Módulo 8 &mdash; Desarrollo de
+        portafolio de un producto digital.
+      </p>
+      <p class="footer__links">
+        <a href="https://github.com/MiguelTroncoso" target="_blank" rel="noopener">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/miguel-troncoso/" target="_blank" rel="noopener">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="mailto:miguel.troncoso36@gmail.com">Email</a>
+      </p>
+      <p class="footer__note">© <span id="year">2026</span> · Hecho con HTML, CSS y JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
